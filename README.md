@@ -1,17 +1,20 @@
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <head><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLJE98C8M9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLJE98C8M9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FLJE98C8M9');
+  </script>
 
-  gtag('config', 'G-FLJE98C8M9');
-</script></head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+  <title>incisid pixel hearts</title>
+
   <style>
     body {
       margin: 0;
@@ -128,12 +131,16 @@
   <div id="topbar">
     <h1>incisid pixel hearts</h1>
   </div>
+
   <canvas id="gameCanvas"></canvas>
+
   <div class="subinfo">
     <h2>(pop the hearts)</h2>
     <div id="counter">popped: 0 / 100</div>
   </div>
+
   <div id="celebration">yay! all hearts popped</div>
+
   <button id="startButton">start</button>
   <button id="restartButton" style="display: none;">restart</button>
 
@@ -149,7 +156,6 @@
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     }
-
     setCanvasSize();
     window.addEventListener('resize', setCanvasSize);
 
@@ -220,9 +226,9 @@
         let h = hearts[i];
         if (!poppedHearts.has(h) && x > h.x - 36 && x < h.x + 36 && y > h.y && y < h.y + 72) {
           poppedHearts.add(h);
-          showNote(h.x, h.y - 60, affirmations[h.index]); // show note above heart
+          showNote(h.x, h.y - 60, affirmations[h.index]);
           updateCounter();
-          hearts.splice(i, 1); // remove from hearts list
+          hearts.splice(i, 1);
           return;
         }
       }
