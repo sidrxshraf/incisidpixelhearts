@@ -1,6 +1,4 @@
-# incisidpixelhearts
-<!DOCTYPE html> 
-<html lang="en">
+
 <head>
    <head><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLJE98C8M9"></script>
