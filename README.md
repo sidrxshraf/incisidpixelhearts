@@ -11,7 +11,7 @@
 </script></head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>incisid pixel hearts</title>
+ 
   <style>
     body {
       margin: 0;
@@ -126,7 +126,7 @@
 </head>
 <body>
   <div id="topbar">
-    <h1>𝒾nci𝓈id pixel hearts</h1>
+    <h1>incisid pixel hearts</h1>
   </div>
   <canvas id="gameCanvas"></canvas>
   <div class="subinfo">
